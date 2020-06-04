@@ -1,0 +1,74 @@
+.hide {
+    display: none;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #score {
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  #score:hover {
+    color: blueviolet;
+  }
+  
+  #timer {
+    float: right;
+    margin: 10px;
+  }
+  
+  #title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: coral !important;
+    border-color: coral !important;
+  }
+  
+  .btn{
+    color: white !important;
+    background-color: coral !important;
+    border-color: coral !important;
+  }
+  
+  #timesUp {
+    border-bottom: solid 2px coral;
+  }
+  
+  #finalScore {
+    color: blueviolet;
+    margin: 10px;
+  }
+  
+  #highScore {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 10px !important;
+  }
+  
+  #landing {
+    text-align: center;
+  }
+  
+  .list-group {
+    text-align: center;
+  }
+  
+  .center-buttons {
+    margin-top: 10px;
+    text-align: center;
+  }

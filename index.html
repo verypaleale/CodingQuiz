@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Quiz! - Test Your Skills!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+  <a href="#" id="score" onclick="renderScores()">View High Score</a>
+
+  <div id="timer">
+    Time: 75
+  </div>
+</div>
+</div>
+</div>
+
+
+
+  <div class="container" id="landing">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>
+          Welcome to the Coding Quiz!
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          This is a timed test. Your goal is to have the most time remaining on the timer as possible.
+          The timer will decrease 15 seconds for every wrong answer you click. Good luck!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <span>
+          <a class="btn btn-primary" id="start" role="button">Start Quiz!</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hide" id="quiz">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>
+          Code Quiz! - Test Your Skills!.
+        </h1>
+      </div>
+    </div>
+
+    <div id="title">
+
+    </div>
+
+    <div id="choices">
+      <button class="btn btn-primary btn-lg btn-block" id="choice1"></button>
+      <button class="btn btn-primary btn-lg btn-block" id="choice2"></button>
+      <button class="btn btn-primary btn-lg btn-block" id="choice3"></button>
+      <button class="btn btn-primary btn-lg btn-block" id="choice4"></button>
+    </div>
+
+
+    <div id="comment">
+
+    </div>
+  </div>
+
+  <div class="container hide" id="highscore">
+    <div class="row" id="timesUp">
+      <div class="col-lg-12">
+        <h1>
+          Times Up!
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>
+          Record your progress by saving your high score below.
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id=finalScore>
+
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <span class="col-lg">
+        <h2 style="display: inline;">
+          Enter initials:
+        </h2>
+        <input type="text"></input>
+        <span>
+          <a class="btn btn-primary" onclick="saveScore()" href="#" role="button">Submit</a>
+        </span>
+    </div>
+  </div>
+
+  <div class="container hide" id="scoreList">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>
+          High Scores
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="list-group"> 
+          
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 center-buttons">
+        <button class="btn btn-primary" onclick="reset()">Back</button>
+        <button class="btn btn-primary" onclick="clearScores()">Clear Scores</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"> </script>
+
+</body>
